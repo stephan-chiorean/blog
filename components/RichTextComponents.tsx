@@ -16,6 +16,7 @@ export const RichTextComponents = {
         </div>
       );
     },
+    hardBreak: () => (<br/>)
   },
   list: {
     bullet: ({ children }: any) => (
@@ -45,7 +46,6 @@ export const RichTextComponents = {
       </blockquote>
     ),
   },
-  hardBreak: () => (<br/>),
   marks: {
     link: ({ children, value }: any) => {
       const rel = !value.href.startsWith('/')

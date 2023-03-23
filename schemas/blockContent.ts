@@ -59,10 +59,15 @@ export default defineType({
     defineArrayMember({
       title: "Hard Break",
       name: "hardBreak",
-      type: "span",
-      options: {
-        isInline: true,
-        isVoid: true,
+      type: "object",
+      fields: [],
+      preview: {
+        select: {},
+        prepare() {
+          return {
+            title: "Hard Break",
+          };
+        },
       },
     }),
     // You can add additional types here. Note that you can't use
